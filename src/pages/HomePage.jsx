@@ -7,6 +7,7 @@ import AboutSection from '@/components/AboutSection';
 import ServicesSection from '@/components/ServicesSection';
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
+import FloatingButtons from '@/components/FloatingButtons';
 
 function HomePage() {
   return (
@@ -22,6 +23,7 @@ function HomePage() {
         <AboutSection />
         <ServicesSection />
         <ContactSection />
+        <FloatingButtons />
         <Footer />
       </div>
     </>

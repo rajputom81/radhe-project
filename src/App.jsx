@@ -26,44 +26,43 @@ function App() {
             <Route path="/update/:id" element={<UpdateDetailPage />} />
             {/* Alias route for convenience if users type /updates/ */}
             <Route path="/updates/:id" element={<UpdateDetailPage />} />
-            
+
             <Route path="/admin/login" element={<LoginPage />} />
-            
+
             {/* Protected Routes */}
-            <Route 
-              path="/admin/dashboard" 
+            <Route
+              path="/admin/dashboard"
               element={
                 <ProtectedRoute>
                   <AdminDashboard />
                 </ProtectedRoute>
-              } 
+              }
             />
-            <Route 
-              path="/admin/posts" 
+            <Route
+              path="/admin/posts"
               element={
                 <ProtectedRoute>
                   <PostsPage />
                 </ProtectedRoute>
-              } 
+              }
             />
-            <Route 
-              path="/admin/enquiries" 
+            <Route
+              path="/admin/enquiries"
               element={
                 <ProtectedRoute>
                   <EnquiriesPage />
                 </ProtectedRoute>
-              } 
+              }
             />
-            <Route 
-              path="/admin/settings" 
+            <Route
+              path="/admin/settings"
               element={
                 <ProtectedRoute>
                   <SettingsPage />
                 </ProtectedRoute>
-              } 
+              }
             />
           </Routes>
-          <FloatingButtons />
           <Toaster />
         </div>
       </Router>
